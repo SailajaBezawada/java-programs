@@ -1,0 +1,392 @@
+Day 5
+
+Day 5 :
+informal way of writing a program
+doesnt follow any strict syntax
+
+1.begin
+// dispaly "enter the value of side"
+2.declare side,area
+3.Input side
+4.area=side*side
+5.display area
+6.End
+
+Example 1​
+greatest number between two numbers
+begin
+declare num1,num2
+Input the values num1,num2
+if(num1>num2)
+print num1 is greater
+else
+print num2 is greater
+end if
+End
+ 
+
+
+
+pseudocode for biggest of three number
+step 1: begin
+step 2: declare vaiables num1,num2,num3
+step 3:input the values into num1,num2,num3
+step 4: if num1>num2 && num1>num3
+step 5: print num1 is biggest number 
+step 6: else if num2>num3
+step 7: print num2 is biggest number
+step 8: else 
+step 9: print num3 is biggest number
+step 10 : end if
+step 11:end 
+
+
+print bilabs for 5 times
+ 
+step1:start
+step2:declare variable count
+step3:initialize coutn with 1
+step4:check if (count<=5) if is true goto step4, otherwise step8
+step5:print bitlabs
+step6:count=count+1
+step7:repeat step 4 to 6 until it reaches count<=5
+step8:stop
+ 
+begin
+declare count
+assin count=1
+//for 1 to 5 times do
+while(count<=5)
+do
+print biltabs
+count=count+1
+end while
+end
+ Pseudocodes:
+
+1. Addition of three numbers
+2.average of three numbers
+3.area of the rectangle,square
+4.perimeter of rectangle,square
+5.student - read 5 subject marks find the percentage
+6.student - read 5 subject marks find the percentage print A,B,C,D,E
+7.positive or negative number
+8.even or not
+9.odd or not
+10.voter eligiblity
+11.print bitlabs 10times
+12.print 1 to 10
+15.print sum of number upto 20
+16.print 1 to 20 even number 
+17.print 1 to 20 odd numbers
+18.print the sum of even numbers  from 1to 10
+19.print the sum of odd numbers  from 1to 10
+20.count the total even numbers from 1 to 50
+21.factor of a number
+22.perfect number
+ 
+1.pseudocode for Addition of three numbers
+ begin
+ declare num1 ,num2,num3,& sum
+input the values to num1,num2,num3
+ add num1+num2+num3
+sum=num1+num2+num3
+ print sum
+end
+
+
+2.Pseudocode for avg of three numbers
+ begin
+decalre num1,num2,num3,sum,avg
+ input values to num1,num2,num3
+ add num1+num2+num3
+ sum=num1+num2+num3
+avg=sum/3
+ print avg
+ end
+
+
+3. pseudocode for Area of square
+1.begin
+// dispaly "enter the value of side"
+2.declare side,area
+3.Input side
+4.area=side*side
+5.display area
+6.End
+ 
+
+4.pseudocode for area of rectangle
+1.begin
+2.declare length,breadth,area
+3,input length,breadth
+4.area=length*breadth
+5.display area
+6.end
+
+
+5.pseudocode for perimeter of square
+1.begin
+2.declare side & perimeter
+3.input side
+4.perimeter=4*side
+5.display perimeter
+6.end
+
+
+6. pseudocode for perimeter of rectangle
+1.begin
+2.declare length ,breadth,perimeter
+3. input length,breadth
+4.perimeter=2*(length+breadth)
+5.display perimeter
+6.end
+
+7.pseudocode for student marks
+1.begin
+2.declare sub phy,chem,com,maths,biology
+3.input marks
+4.calculate sum of marks
+5.percentage=(sum of marks/totalmarks)*100
+6.if (percentage>=90%)
+7.print grade A
+8.else if(percentage>=80%)
+9.print grade b
+10.else if(percentage>=70%)
+11.print grade c
+12.else if (percentage>=60%)
+13.print grade d
+14.else if(percentage>=40%)
+15.print grade e
+16.else 
+17.print failed
+18.end if 
+19.end
+
+
+8.pseudocode for positive or negative numbers
+1.begin
+2.declare num
+3.input  value into num
+4. if num>0
+5.print positive number
+6.else if num<0
+7.print negative number
+8.end if
+9.end
+
+9.pseudocode to print even or not
+1.begin
+2.decalre n
+3.input value into n
+4.if(n%2==0) 
+5.print even
+6.i=i+1
+ 7. else
+8.print not even
+9.end if 
+10.end
+
+
+10.pseudocode to print odd or not
+1.begin
+2.decalre n
+3.input value into n
+4,if(n%2!=0)
+5.print odd
+6.i=i+1
+7.else
+8 print not odd
+9.end if
+10.end
+
+11.pseudocode for printing bitlabs 5 times
+begin
+declare count
+assin count=1
+//for 1 to 5 times do
+while(count<=5)
+do
+print biltabs
+count=count+1
+end while
+end
+
+
+12.pseudocode for voters eligiibility
+1.begin
+2.declare age
+3.input value into age
+4.if age>=18
+5.print eligible to vote
+6.end if
+7.end
+
+13.pseudocode for print 1 to 10 
+step 1: begin
+step 2: declare i
+step 3: input i=1,sum=0
+step 4: while (i<=10)do
+step 5: sum=sum+i
+step 5:i=i+1
+step 6:print sum
+step 7: end while
+step 8:end
+
+14.print sum of number upto 20
+step 1: begin
+step 2: declare i,sum
+step 3: input i=1,sum=0
+step 4:// for 1 ton 20 times
+while(i<=20)do 
+step 5: sum=sum+i
+step 6: i=i+1
+step 7: print sum
+step 8: end while
+step 9: end
+
+16.print 1 to 20 even number
+step 1: begin
+step 2: declare i
+step 3: input i=1
+step 4: //for do 1 to 20 times 
+        while (i<=20)
+step 5: if (i%2==0)
+        print i
+step 6: end if
+        else i=i+1
+step 7: end while 
+step 8: end
+
+
+17.print 1 to 20 odd number
+step 1: begin
+step 2: declare i
+step 3: input i=1
+step 4: //for 1 to 20 times do
+        while (i<=20)
+step 5: if (i%2!==0)
+        print i
+ step 6: end if
+        else i=i+1
+step 7: end while
+step 8: end
+
+
+18.print the sum of even numbers  from 1to 10
+step 1: begin
+step 2: declare i,sum
+step 3: input i=1,sum=0
+step 4: //for 1to10 times do
+        while (i<=10)
+step 5: if (i%2==0)
+  step 6: print i
+ step7:sum=sum+i
+step 8:print sum
+step 9: end if
+
+ step 10:else i=i+1
+step 11: end while
+step 12: end
+
+19.print the sum of odd numbers  from 1to 10
+step 1: begin
+step 2: declare i,sum
+step 3: input i=1,sum=0
+step 4: //for 1to10 times do
+        while (i<=10)
+step 5: if (i%2!==0)
+        print i
+        sum=sum+i
+        else i=i+1
+step 6: print sum
+ end while
+ end
+
+perfect number
+
+step1:start
+step2:declare the vaiable n,i,sum
+step3:read the value of n,i=1
+step4:if n%i==0 then go to step5 otherwise go to step6
+step5:add the i values and store into sum(sum=sum+i)
+step6:increment i (i=i+1)
+step7:repeat the steps 4,5,6 until it reaches i<n
+step8:if the sum==n then goto step9 otherwise goto step10
+step9:print perfect number
+step10:print number is not perfect
+step11:stop
+ 
+
+
+
+    1.begin
+2.declare num,count,sum
+3.read num and initialize sum=0,count=1
+4.while(count<num) do
+5.if(num%count==0)
+6.sum=sum+count
+7.count=count+1
+8.else
+9.count=count+1
+10.end if
+11.end while
+12.if(num==sum)
+13.display num is a perfect number
+14.else
+15.display num is not a perfect number
+16.end if
+17.end
+(1 liked)​[11:37] Sarikonda HariPriya (Guest)
+    begin
+declare i,n,sum
+input n,i=1,sum=0
+while (i<n)do
+if(n%i==0)
+sum=sum+i
+count=count+1
+ else
+count=count+1
+end while
+end if
+if(sum==n)
+print perfect number
+else
+ print not perfect number
+end if
+end
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
