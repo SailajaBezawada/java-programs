@@ -1,0 +1,220 @@
+Assignments 
+
+
+import java.util.Scanner;
+class ArrayTransposition
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter no of rows");
+      int rows=s.nextInt();
+      System.out.println("enter no.of.columns");
+      int columns=s.nextInt();
+      int a[][]=new int[rows][columns];
+      System.out.println("enter elements of matrix");
+      for(int i=0;i<rows;i++)
+        {
+          for(int j=0;j<columns;j++)
+            {
+              a[i][j]=s.nextInt()
+            }
+        }
+      int transposematrix=transposematrix(a);
+      
+    }
+  }
+
+import java.util.Scanner;
+class LargestElement
+  {
+    public static void largestElement(int a[][])
+    {
+      int rows=a.length;
+      int columns=a[0].length;
+      int largestelement=a[0][0];
+      for(int i=0;i<rows;i++)
+        {
+          for(int j=0;j<columns;j++)
+            {
+              if(a[i][j]>largestelement)
+              {
+                largestelement=a[i][j];
+              }
+            }
+        }
+    }
+ public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter no.of.rows");
+      int rows=s.nextInt();
+        System.out.println("enter no.of columns");
+      int columns=s.nextInt();
+      int a[][]=new int[rows][columns];
+      System.out.println("enter elements of matrix");
+      for(int i=0;i<rows;i++)
+        {
+          for(int j=0;j<columns;j++)
+            {
+              a[i][j]=s.nextInt();
+            }
+        }
+      int largestelement=findlargestelement(a);
+      largeElement(a);
+      System.out.println("largest element" + largestelement);
+    }
+  }
+
+import java.util.Scanner;
+class SumMatrix
+  {
+    public static void addMatrix(int arr[][],int arr2[][],int sum[][])
+    {
+      int rows =arr.length;
+      int columns=arr[0].length;
+      for(int i=0;i<rows;i++)
+        {
+          for(int j=0;j<columns;j++)
+            {
+              sum[i][j]=arr[i][j]+arr2[i][j];
+            }
+        }
+    }
+
+ public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the no.of rows");
+      int rows=s.nextInt();
+      System.out.println("enter no.of columns");
+     int columns=s.nextInt();
+      int arr[][]=new int[rows][columns];
+      System.out.println("enter the element of the first matrix");
+      for(int i=0;i<rows;i++)
+        {
+          for(int j=0;j<columns;j++)
+            {
+              arr[i][j]=s.nextInt();
+            }
+        }
+      int arr2[][]=new int[rows][columns];
+      System.out.println("enter the elements of second matrix");
+      for(int i=0;i<rows;i++)
+        {
+          for(int j=0;j<columns;j++)
+            {
+              arr2[i][j]=s.nextInt();
+            }
+        }
+      int sum[][]=new int[rows][columns];
+      addMatrix(arr,arr2,sum);
+      System.out.println("sum of matrix is");
+      for(int i=0;i<rows;i++)
+        {
+          for(int j=0;j<columns;j++)
+            {
+              System.out.print(sum[i][j]+" ");
+            }
+          System.out.println();
+          
+        }
+    }
+  }
+            import java.util.Scanner;
+class NumberGame
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      Random random=new Random();
+      int randomNumber;
+      while(true)
+        {
+          randomNumber=random.nextInt(100)+1;
+          System.out.println("guess the number between 1 and 100");
+          while(true)
+            {
+              int userguess=s.nextInt();
+              if(userguess<randomNumber)
+              {
+                System.out.println("too low guess again");
+              }
+              else if(userguess>randomNumber)
+              {
+                System.out.println("too high guess again");
+              }
+              else
+              {
+                System.out.println("you guessed correct");
+                break;
+                
+              }
+            }
+          System.out.println("1.play again");
+          System.out.println("2.exit program");
+          System.out.println("enter your choice");
+          int choice=s.nextInt();
+          switch(choice)
+            {
+              case 1:
+                System.out.println("playing again");
+                break;
+              case 2:
+                System.out.println("2.exit program");
+                break;
+              default:
+                System.out.println("invalid intput");
+            }
+          
+        }
+    }
+  }
+
+class ArraySort {
+    public static void main(String[] args) {
+        int a[]={10,35,23,45,89,56};
+        int i,j,temp=0;
+       
+        for(i=0;i<a.length;i++)
+        {
+            for(j=i+1;j<a.length;j++)
+            {
+            if(a[j]<a[i])
+            {
+              temp=a[i];
+              a[i]=a[j];
+              a[j]=temp;
+            }
+           
+        }
+        }
+        System.out.println("Elements after sorting:");
+        for(i=0;i<a.length;i++)
+        {
+        System.out.print(a[i]+" ");
+        }
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class MultiplicationTable {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        System.out.println("Multiplication table for " + num + ":");
+
+        for (int i = 1; i <= 10; i++) {
+            if (i % num == 0) {
+                System.out.println(i + " x " + num + " = " + (i * num));
+            }
+        }
+    }
+}
+
