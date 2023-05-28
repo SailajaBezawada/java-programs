@@ -1,0 +1,229 @@
+Day 11
+import java.util.Scanner;
+class Count
+  {
+    public static void main(String args[])
+    {
+      int count=0;
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int n=s.nextInt();
+      while(n>0)
+        {
+          int result=n%10;
+          n=n/10;
+          count=count+1;
+        }
+      System.out.println(count);
+    }
+  }
+
+import java.util.Scanner;
+class DigitToNum
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int n=s.nextInt();
+      while(n>0)
+        {
+          int result=n%10;
+          System.out.println(result);
+          n=n/10;
+          
+        }
+    }
+  }
+
+
+
+import java.util.Scanner;
+class Factorial
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number ");
+      int n=s.nextInt();
+      int fact=1,i;
+      for(i=1;i<=n;i++)
+        {
+          fact=fact*i;
+        }
+      System.out.println(fact);
+    }
+  }
+
+import java.util.Scanner;
+class Factors
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int n=s.nextInt();
+      for(int i=1;i<=n;i++)
+        {
+          if(n%i==0)
+          System.out.println(i);
+        }
+      
+    }
+  }
+
+import java.util.Scanner;
+class FirstLast
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the last digit");
+      int n=s.nextInt();
+      int firstdigit=num;
+      while(firstdigit>10)
+        {
+          firstdigit=num%10;
+          num=num/10;
+        }
+      int lastdigit=num%10;
+      System.out.println("the firstdigit is"+firstdigit);
+      System.out.println("the last digit is"+lastdigit);
+        
+    }
+  }
+
+import java.util.Scanner;
+class Mul
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+        System.out.println("enter the number");
+      int n=s.nextInt();
+      int i;
+      for(i=1;i<=n;i++)
+        {
+          if(i%3==0)
+          {
+            System.out.println(i);
+          }
+            
+        }
+    }
+  }
+
+
+import java.util.Scanner;
+class PNum
+  {
+    public static void main(String args[])
+    { 
+      int count=0;
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int num=s.nextInt();
+      for( int i=1;i<=num;i++)
+        {
+          if(num%i==0)
+          {
+            count++;
+          }
+          
+        }
+          if(count==2)
+          {
+            System.out.println("it is a prime number");
+          }
+          else
+          {
+            System.out.println("it is not prime number");
+          }
+        }
+      
+    }
+  
+
+
+import java.util.Scanner;
+class Product
+  {
+    public static void main(String args[])
+    {
+      int product=1;
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int n=s.nextInt();
+      while(n>0)
+        {
+          int result=n%10;
+          n=n/10;
+          product=product*result;
+        }
+      System.out.println(product);
+    }
+  }
+
+import java.util.Scanner;
+class Reverse
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int n=s.nextInt();
+      int reverse=0;
+      while(n>0)
+        {
+          int result=n%10;
+          reverse=(reverse*10)+result;
+          n=n/10;
+          
+        }
+      System.out.println("the reverse number is:"+reverse);
+    }
+  }
+
+import java.util.Scanner;
+class Sum
+  {
+    public static void main(String args[])
+    {
+      int sum=0;
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int n=s.nextInt();
+      while(n>0)
+        {
+        int result=n%10;
+         n=n/10;
+        sum=sum+result;
+         
+        }
+      System.out.println(sum);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,300 @@
+Day 14
+import java.util.Scanner;
+class Add
+  {
+    public static void additionOfTwoNumbers(int num1,int num2)
+    {
+      int result=num1+num2;
+      System.out.println("the result is"+result);
+    }
+    public static void subtractOfTwoNumbers(int num1,int num2)
+    {
+      int result=num1-num2;
+      System.out.println("the result is"+result);
+    }
+   public static void multiplyOfTwoNumbers(int num1,int num2)
+    {
+      int result=num1*num2;
+      System.out.println("the result is"+result);
+    }
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter num1");
+      int num1=s.nextInt();
+      System.out.println("enter num2");
+      int num2=s.nextInt();
+      additionOfTwoNumbers(num1,num2);
+      subtractOfTwoNumbers(num1,num2);
+      multiplyOfTwoNumbers(num1,num2);
+      
+        
+    }
+  }
+
+import java.util.Scanner;
+class AreaOfRectangle
+  {
+    public static void areaRec(int a,int b)
+    {
+      int area=a*b;
+      System.out.println("area"+area);
+    }
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter length");
+      int a=s.nextInt();
+      System.out.println("enter breadth");
+      int b=s.nextInt();
+      areaRec(a,b);
+    }
+  }
+
+
+import java.util.Scanner;
+class BigNum
+  {
+    public static void bigNumber(int num1,int num2,int num3)
+    {
+      if((num1>num2)&&(num1>num3))
+      {
+        System.out.println("num1 is big");
+      }
+      else if(num2>num3)
+      {
+        System.out.println("num2 is big");
+      }
+      else
+      {
+        System.out.println("num3 is big");
+      }
+    }
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter num1");
+      int num1=s.nextInt();
+      System.out.println("enter num2");
+      int num2=s.nextInt();
+      System.out.println("enter num3");
+      int num3=s.nextInt();
+      bigNumber(num1,num2,num3);
+    }
+  }
+
+
+import java.util.Scanner;
+class Divisible
+  {
+    public static void divisibleNum(int num1,int num2)
+    {
+      if(num1%num2==0)
+      {
+        System.out.println("number is divisible");
+      }
+      else
+      {
+      System.out.println("number is not divisible");  
+      }
+    }
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter num1");
+      int num1=s.nextInt();
+      System.out.println("enter num2");
+      int num2=s.nextInt();
+      divisibleNum(num1, num2);
+      
+        
+    }
+  }
+
+import java.util.Scanner;
+class Even
+  {
+    public static void evenNumber(int num1)
+    {
+      if(num1%2==0)
+      {
+        System.out.println(num1+"is even");
+      }
+      else
+      {
+        System.out.println(num1+"is not even");
+      }
+    }
+    public static void main (String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter num1");
+      int num1=s.nextInt();
+      evenNumber(num1);
+    }
+  }
+
+
+import java.util.Scanner;
+class EvenNum
+  {
+    public static void evenNum(int num1)
+    {
+      for(int i=1;i<=num1;i++)
+        {
+          if(i%2==0)
+          {
+            System.out.println(i);
+          }
+        
+        }
+    }
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int num1=s.nextInt();
+      evenNum(num1);
+    }
+  }
+
+import java.util.Scanner;
+class Odd
+  {
+    public static void oddNumber(int num1)
+    {
+      if(num1%2!=0)
+      {
+        System.out.println(num1+"is odd");
+      }
+      else
+      {
+      System.out.println(num1+"is not odd");  
+      }
+    }
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter num1");
+      int num1=s.nextInt();
+      oddNumber(num1);
+    }
+  }
+
+
+import java.util.Scanner;
+class OddNumbers
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      while(true)
+        {
+          System.out.println("1.print odd numbers between 1 to 100");
+          System.out.println("2.Exit program");
+          System.out.println("Enter your choice");
+          int choice=s.nextInt();
+          switch(choice)
+            {
+              case 1:
+                for(int i=1;i<=100;i++)
+                  {
+                    if(i%2==0)
+                    {
+                      continue;
+                    }
+                    System.out.println(i+" ");
+                  }
+                System.out.println();
+                break;
+              case 2:
+                System.out.println("Exisiting program");
+                System.exit(0);
+              default:
+                System.out.println("invalid choice");
+            }
+            
+        }
+    }
+  }
+
+import java.util.Scanner;
+class PositiveOrNegative
+  {
+    public static void positiveNum(int n)
+    {
+      if(n>0)
+      {
+        System.out.println(" it is positive");
+      }
+      else
+      {
+        System.out.println("it is negative");
+      }
+    }
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a number");
+      int n=s.nextInt();
+      positiveNum(n);
+    }
+  }
+
+import java.util.Scanner;
+class Sample
+  {
+    public static void printNumbers(int n)
+    {
+      for(int i=1;i<=n;i++)
+        {
+          System.out.println(i);
+        }
+    }
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int n=s.nextInt();
+      printNumbers(n);
+        
+    }
+  }
+
+import java.util.Scanner;
+class StudentDetails
+  {
+    public static void studentDetails(String studentname,int rollno,String studentaddress,int studentmarks,int studentage)
+    {
+      System.out.println("the student details are" 
++studentname+"rollno"+rollno+"studentaddress"+studentaddress+"tstudentmarks"+studentmarks+"studentage"+studentage);
+    }
+    public static void main(String args[])
+    {
+     Scanner s=new Scanner(System.in);
+    System.out.println("enter students name");
+    String name=s.nextLine();
+      System.out.println("enter students rollno");
+      int rollno=s.nextInt();
+      System.out.println("enter student address");
+      String address=s.nextLine();
+      System.out.println("enter student marks");
+      int marks=s.nextInt();
+      System.out.println("enter student age");
+      int age=s.nextInt();
+    }
+  }
+
+class SumMethod
+  {
+    public static void sumOfTwoNumbers(int num1,int num2)
+    {
+      int result=num1+num2;
+      System.out.println("the value is"+result);
+    }
+    public static void main(String args[])
+    {
+      sumOfTwoNumbers(100,105);
+      sumOfTwoNumbers(101,20);
+    }
+  }

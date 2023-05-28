@@ -1,0 +1,364 @@
+Day 13
+import java.util.Scanner;
+class Atm
+  {
+   public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      do
+        {
+          System.out.println("1.deposit");
+          System.out.println("2.withdraw");
+          System.out.println("3.view balance");
+          System.out.println("4.exit");
+          System.out.println("enter your choice");
+          int choice=s.nextInt();
+          switch(choice)
+            {
+              case 1:
+                System.out.println("enter the amount to be deposit");
+                double deposit=s.nextDouble();
+                System.out.println("deposit"+deposit+" succesful");
+                break;
+              case 2:
+                System.out.println("enter amount to withdraw");
+                  double withdraw=s.nextDouble();
+                System.out.println("intial balance");
+                double balance=s.nextDouble();
+                if(withdraw>balance)
+                {
+                  System.out.println("insufficient balance");
+                }
+                else
+                {
+                  withdraw=balance;
+              System.out.println("withdraw"+withdraw+"succesful");
+                  
+                }
+                break;
+              case 3:
+                System.out.println("view balance"+balance);
+                break;
+              case 4:
+                System.out.println("thankyou for visiting");
+                quit=true;
+                break;
+              default:
+                System.out.println("invalid choice");
+                break;
+            }
+          while(true);  
+        }
+        
+  }
+  
+
+
+}
+                
+                
+
+ 
+    import java.util.Scanner;
+class Calculate
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      char option;
+      do
+        {
+          System.out.println("select the operator");
+          System.out.println("+ addition"+"\n"+"- subtraction"+"\n"+"* multiplication"+"\n"+"% modulos"+"\n"+"/ division");
+        char ch=s.next().charAt(0);
+          System.out.println("enter a value");
+          int a=s.nextInt();
+        System.out.println("enter b value");
+          int b=s.nextInt();
+          double result;
+          switch(ch)
+          {
+            case '+':
+              result=a+b;
+              System.out.println("result"+result);
+              break;
+            case '-':
+              result=a-b;
+              System.out.println("result"+result);
+            case '*':
+              result=a*b;
+              System.out.println("result"+result);
+            case '/':
+              result=a/b;
+              System.out.println("result"+result);
+            case '%':
+              result=a%b;
+              System.out.println("result"+result);
+            default:
+              System.out.println("invalid input");
+                }
+          System.out.println("you want to continue: (y/n)");
+        option=s.next().charAt(0);
+      }
+        while(option=='y'||option=='Y');
+    }
+  }
+
+import java.util.Scanner;
+class Calculate
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      char option;
+      do
+        {
+          System.out.println("select the operator");
+          System.out.println("+ addition"+"\n"+"- subtraction"+"\n"+"* multiplication"+"\n"+"% modulos"+"\n"+"/ division");
+        char ch=s.next().charAt(0);
+          System.out.println("enter a value");
+          int a=s.nextInt();
+        System.out.println("enter b value");
+          int b=s.nextInt();
+          double result;
+          switch(ch)
+          {
+            case '+':
+              result=a+b;
+              System.out.println("result"+result);
+              break;
+            case '-':
+              result=a-b;
+              System.out.println("result"+result);
+            case '*':
+              result=a*b;
+              System.out.println("result"+result);
+            case '/':
+              result=a/b;
+              System.out.println("result"+result);
+            case '%':
+              result=a%b;
+              System.out.println("result"+result);
+            default:
+              System.out.println("invalid input");
+                }
+          System.out.println("you want to continue: (y/n)");
+        option=s.next().charAt(0);
+      }
+        while(option=='y'||option=='Y');
+    }
+  }
+
+
+
+import java.util.Scanner;
+class Calculate
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      char option;
+      do
+        {
+          System.out.println("select the operator");
+          System.out.println("+ addition"+"\n"+"- subtraction"+"\n"+"* multiplication"+"\n"+"% modulos"+"\n"+"/ division");
+        char ch=s.next().charAt(0);
+          System.out.println("enter a value");
+          int a=s.nextInt();
+        System.out.println("enter b value");
+          int b=s.nextInt();
+          double result;
+          switch(ch)
+          {
+            case '+':
+              result=a+b;
+              System.out.println("result"+result);
+              break;
+            case '-':
+              result=a-b;
+              System.out.println("result"+result);
+            case '*':
+              result=a*b;
+              System.out.println("result"+result);
+            case '/':
+              result=a/b;
+              System.out.println("result"+result);
+            case '%':
+              result=a%b;
+              System.out.println("result"+result);
+            default:
+              System.out.println("invalid input");
+                }
+          System.out.println("you want to continue: (y/n)");
+        option=s.next().charAt(0);
+      }
+        while(option=='y'||option=='Y');
+    }
+  }
+
+class DoWhile
+  {
+    public static void main(String args[])
+    {
+      int i=1;
+      do
+        {
+          System.out.println(i);
+          i++;
+        }
+        while(i<=10);
+    }
+  }
+
+
+class For
+  {
+    public static void main(String args[])
+    {
+      for(int i=1;i<=3;i++);
+      {
+        for(int j=1;j<=3;j++);
+        {
+          System.out.println("i = "+i+"  j = "+j);
+        }
+      }
+      
+    }
+  }
+import java.util.Scanner;
+class NaturalNum
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("entr the first number");
+      int first=s.nextInt();
+      System.out.println("enter last number");
+      int last=s.nextInt();
+      for(int i=first;i<=last;i++)
+        {
+          System.out.println(i);
+        }
+    }
+  }
+
+import java.util.Scanner;
+class OddNumbers
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      while(true)
+        {
+          System.out.println("1.odd numbers between 1 to 100");
+          System.out.println("2.exit program");
+          int choice=s.nextInt();
+           switch(choice)
+             {
+               case 1:
+                 for(int i=1;i<=100;i++)
+                   {
+                     if(i%2!=0)
+                
+                 System.out.println(i);
+                   }
+                  break; 
+               case 2:
+                 System.out.println("exit program");
+                 break;
+             }
+                 
+             }
+        }
+    }
+  
+
+import java.util.Scanner;
+class Password
+  {
+    public static void main(String args[])
+    { 
+      char option;
+      Scanner s=new Scanner(System.in);
+      String password1="Sailu@123";
+      while(true)
+        {
+          System.out.println("enter the password");
+          String userpassword=s.nextLine();
+          if(userpassword==password1)
+          {
+            System.out.println("Password is correct");
+            break;
+          }
+          else
+          {
+            System.out.println("password invalid");
+            
+          }
+        }
+          System.out.println("you want to continue:(Y/N)");
+          option=s.next().charAt(0);
+        }
+       while(true);
+  }
+ 
+
+import java.util.Scanner;
+class Prime
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a number");
+      int num=s.nextInt();
+      for( int i=1;i<=num;i++)
+        {
+          int count=0;
+          for(int j=1;j<=i;j++)
+            {
+              if(i%j==0);
+              {
+                count++;
+              }
+            }
+          if(count==2)
+          {
+            System.out.println(i);
+          }
+        }
+        
+    }
+
+    
+  }
+  
+import java.util.Scanner;
+class Strong
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a number");
+      int n=s.nextInt();
+      int result,temp=n,sum=0;
+      while(n>0)
+        {
+          int digit=n%10;
+         int fact=1;
+          for(int i=1;i<=digit;i++)
+            {
+              fact=fact*i;
+            }
+          sum=sum+fact;
+          n=n/10;
+        }
+      if(sum==temp)
+      {
+        System.out.println(" armstrong number");
+      }
+      else
+      {
+        System.out.println("not armstrong");
+      }
+    }
+  }
