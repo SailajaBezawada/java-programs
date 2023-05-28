@@ -1,0 +1,273 @@
+Day 19
+class Alpha
+  {
+    public static void main(String args[])
+    {
+      String str="Bitlabs@123";
+      int digit=0;
+      int s=0;
+      int a=0;
+      for(int i=0;i<str.length();i++)
+        {
+          char ch=str.charAt(i);
+          if((ch>='a'&&ch<='z')||(ch>='A'&& ch<='Z'))
+          {
+            a++;
+          }
+          else if(ch>='0'&&ch<='9')
+          {
+            digit++;
+          }
+          else
+            s++;
+          }
+      //System.out.println("alphabet are:" +a);
+      System.out.println("alphabets are :"+ a);
+      System.out.println("digits are:"+ digit);
+      System.out.println("specialcharachters are :"+s);
+      
+    }
+  }
+
+import java.util.Scanner;
+class Email
+  {
+    public static void main(String args[])
+    {
+      int a=0,s=0,d=0,count=0;
+      char ch;
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the email");
+      String email=sc.nextLine();
+      for(int i=0;i<email.length();i++)
+        {
+          ch=email.charAt(i);
+          if(ch>='a'&&ch<='z')
+          {
+            a++;
+          }
+          else if(ch>='0'&&ch<='9')
+          {
+            d++;
+          }
+          else{
+            s++;
+          }
+            
+          
+        }
+      if(a>0 && d>0 && s>0)
+      {
+        System.out.println("it is a valid mail");
+      }
+      else
+        System.out.println("invalid email");
+      
+        
+      }
+    }
+  
+
+import java.util.Scanner;
+class EmailValidation
+  {
+    public static void main(String args[])
+    {
+     int d=0,s=0,l=0,count=0;
+      char ch;
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the email");
+      String email =s.nextLine();
+      for(int i=0;i<email.length();i++)
+      {
+          ch=email.charAt(i);
+        if(ch>='a'&&ch<='z')
+        {
+          l++;
+        }
+         else if(ch>='0'&&ch<='9')
+        {
+          d++;
+        }
+        else 
+        {
+          s++;
+        }
+      }
+      if(l>0 && d>0 && s>0)
+      {
+        System.out.println("it is a valid email");
+        
+      }
+      else
+        System.out.println("invalid email");
+      
+        
+      }
+  }
+
+          
+
+import java.util.Scanner;
+class PasswordValidation
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      int acount=0,dcount=0,scount=0,lcount=0;
+      char ch;
+      System.out.println("enter the password");
+      String password =s.nextLine();
+      for(int i=0;i<password.length();i++)
+        {
+          ch =password.charAt(i);
+          if(ch>='A' && ch<='Z')
+          {
+            acount++;
+          }
+          else if(ch>='0' && ch<='9')
+          {
+            dcount++;
+          }
+          else if(ch>='a' && ch<='z')
+          {
+            lcount++;
+          }
+          else
+          {
+            scount++;
+          }
+          
+          
+        }
+      if(acount>0 && lcount>0 && dcount>0 && scount>0)
+      {
+        System.out.println("password is valid");
+      }
+      else
+      
+      System.out.println("password invalid");
+      
+
+    }
+  }
+
+
+import java.util.Scanner;
+class ReverseString
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the string");
+      String str=s.nextLine();
+      String rev="";
+      for(int i=str.length()-1;i>=0;i--)
+        {
+          rev=rev+str.charAt(i);
+        }
+      System.out.println(rev);
+    }
+  }
+
+import java.util.Scanner;
+class SplitReverse
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the word");
+      String s=sc.nextLine();
+      String s1[]=s.split(" ");
+      String reverse=" ";
+      for(int i=s1.length-1;i>=0;i--);
+      {
+        reverse=(reverse+s1[i]);
+        
+      }
+      System.out.println(reverse);
+    }
+  }
+
+import java.util.Scanner;
+class StringOccurance
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the string");
+      String str=s.nextLine();
+      System.out.println("the first occurance of charachter in string is:");
+      System.out.println(str.indexOf('a'));
+    }
+  }
+
+import java.util.Scanner;
+class StringPalindrome
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the string");
+      String str=s.nextLine();
+      String rev=" ";
+      for(int i=str.length()-1;i>0;i++)
+        {
+         rev=rev+str.charAt(i); 
+        }
+      System.out.println("it is palindrome");
+    
+     System.out.println("it is not palindrome");
+    
+      
+    }
+  }
+
+import java.util.Scanner;
+class VowelsCons
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the string ");
+      String str=s.nextLine();
+      int v=0;
+      int c=0;
+      for (int i=0;i<str.length();i++)
+        {
+          if((str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u'))
+             {
+            v++;
+             }
+          else
+          {
+            c++;
+          }
+        }
+     // System.out.println("count of vowels are :"+v);
+      System.out.println("count of vowels are"+v);
+      System.out.println("count of consonants are "+c);
+    }
+  }
+
+import java.util.Scanner;
+class WordCount
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      int count=1;
+      System.out.println("Enter the string");
+      String str=s.nextLine();
+      String st[]=str.split(" ");
+      for(int i=0;i<str.length()-1;i++)
+        {
+          if(str.charAt(i)==' ')
+          {
+            count++;
+          }
+        }
+      System.out.println("count of words are:"+count);
+    }
+  }
+
