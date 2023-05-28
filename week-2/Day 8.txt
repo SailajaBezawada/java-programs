@@ -1,0 +1,318 @@
+Day 8
+
+import java.util.Scanner;
+  class AlphabetOrNot
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the character");
+      char ch=sc.next().charAt(0);
+      if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+      {
+        System.out.println(ch+" is an alphabet");
+      }
+      else
+        System.out.println(ch+ " is not an alphabet");
+           
+    }
+  }
+
+import java.util.Scanner;
+class AlphaDigit
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the value");
+        char ch=s.next ().charAt(0);
+       if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+        {
+        System.out.println(" given value is alphabet");
+        }
+ else if(ch>='0'&&ch<='9')
+      {
+        System.out.println(" given value is digit"+ch);
+      }
+      else
+      {
+        System.out.println("given value is special charachter");
+      }
+        
+    }
+  }
+
+
+import java.util.Scanner;
+class DivisibleNumber
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+     System.out.println("Enter the number");
+        int num=s.nextInt();
+        if((num%5==0) && (num%11==0))
+        {
+        System.out.print("it is divisible by 5 and 11");
+        }
+      else
+      {
+        System.out.println("it is not divisible by 5 and 11");
+      }
+    }
+  }
+
+import java.util.Scanner;
+class EmployeeSalary
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+     System.out.println("enter basicsalary");
+       Double basicsalary= s.nextDouble();
+     
+      if(basicsalary<=10000)
+      {
+       Double HRA=((basicsalary*20)/100);
+        Double DA=((basicsalary*80)/100);
+        Double grosssalary=basicsalary+HRA+DA;
+      System.out.println("grosssalary:"+grosssalary);
+      }
+      else if(basicsalary<=20000)
+      {
+        Double HRA=((basicsalary*25)/100);
+        Double DA=((basicsalary*90)/100);
+        Double grosssalary=basicsalary+HRA+DA;
+      System.out.println("grosssalary:"+grosssalary);
+  
+      }
+      else
+      {
+        Double HRA=((basicsalary*30)/100);
+        Double DA=((basicsalary*95)/100);
+        Double grosssalary=basicsalary+HRA+DA;
+      System.out.println("grosssalary:"+grosssalary);
+      
+      }
+    }
+  }
+     
+      
+    
+  import java.util.Scanner;
+class Grade
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter Phy marks");
+      int phy=s.nextInt();
+      System.out.println("enter chem marks");
+      int chem=s.nextInt();
+      System.out.println("enter maths marks");
+      int maths=s.nextInt();
+      System.out.println("enter biology marks");
+        int biology=s.nextInt();
+      System.out.println("enter computers marks");
+      int computers=s.nextInt();
+      double totalmarks=(phy+chem+maths+biology+computers);
+      double percentage=(totalmarks/500)*100;
+      System.out.println("percentage is:"+percentage);
+      if(percentage>=90)
+      {
+        System.out.println("A grade");
+      }
+      else if(percentage>=80)
+      {
+        System.out.println("B grade");
+      
+      }
+      else if(percentage>=70 && percentage<80)
+      {
+        System.out.println(" C grade");
+        
+      }
+      else if(percentage>=60 && percentage<70)
+      {
+        System.out.println("D grade");
+      }
+      else if(percentage>=40 && percentage<60)
+      {
+        System.out.println(" E grade");
+      }
+      else if(percentage<40)
+      {
+        System.out.println("Fail");
+      }
+      
+      
+        
+    }
+  }
+
+import java.util.Scanner;
+class LeapOrNot
+  {
+    public static void main(String args[])
+    {
+      Scanner s= new Scanner(System.in);
+      System.out.println("enter a value");
+        int num=s.nextInt();
+      if(num%4==0)
+      {
+
+        System.out.println("it is a leap year");
+      }
+      else
+      {
+        System.out.println("it is not a leap year");
+      }
+    }
+  }
+
+import java.util.Scanner;
+class MaximumOfThree
+  {
+    public static void main(String args[])
+    {
+      Scanner s = new Scanner(System.in);
+      System.out.println("enter the first number");
+      int num1=s.nextInt();
+      System.out.println("enter the second number");
+      int num2=s.nextInt();
+      System.out.println("enter the third number");
+      int num3=s.nextInt();
+      if((num1>num2)&&(num1>num3))
+      {
+        System.out.println("enter num1 is greatest"+num1);
+      }
+      else if(num2>num3)
+      {
+        System.out.println("enter num2 is greatest"+num2);
+      }
+      else
+      {
+        System.out.println("enter num3 is greatest"+num3);
+      }
+
+    }
+  }
+
+    
+import java.util.Scanner;
+class MaximumTwoNumbers
+  {
+    public static void main(String args[])
+    {
+      Scanner s = new Scanner(System.in);
+      System.out.println("enter the first number");
+      int num1=s.nextInt();
+      System.out.println("enter the second number");
+      int num2=s.nextInt();
+      if(num1>num2)
+      {
+        System.out.println("maximum number is"+num1);
+      }
+      else
+      {
+        System.out.println("maximum number is "+num2);
+      }
+    }
+  }
+
+import java.util.Scanner;
+class NestedEx
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      int age,weight;
+      System.out.println("enter you age");
+      age=sc.nextInt();
+      System.out.println("enter you weight");
+      weight=sc.nextInt();
+      if(age>=18)
+      {
+        if(weight>60)
+        {
+          System.out.println("you are elligilble to donate");
+        }
+        else{
+          System.out.println("your weight is not enough");
+        }
+      }
+      else
+      {
+        System.out.println("your age is not enough");
+      }
+      
+    }
+  }
+
+
+import java.util.Scanner;
+class Salary 
+ {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter basic salary: ");
+        double basicSalary = scanner.nextDouble();
+
+        double HRA,DA;
+        if (basicSalary <= 10000)
+        {
+            HRA = 0.2* basicsalary;
+            DA= 0.8 * basicSalary;
+        } else if (basicSalary <= 20000) 
+        {
+            HRA = 0.25 * basicSalary;
+            DA= 0.9 * basicSalary;
+        } else
+        {
+            HRA = 0.3 * basicSalary;
+            DA= 0.95 * basicSalary;
+        }
+
+        double grossSalary = basicSalary + HRA +DA;
+        System.out.println("Gross salary: " + grossSalary);
+    }
+}
+
+
+import java.util.Scanner;
+class Temperature
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the value ofcelsius");
+      Double celsius=s.nextDouble();
+      System.out.println("enter the fahrenheit");
+      Double fahrenheit=s.nextDouble();
+      Double f=(celsius*1.8)+32;
+      Double c=(fahrenheit-32)/1.8;
+       System.out.println("Value of "+fahrenheit+" fahrenheit in celsius: "+ c);   
+        System.out.println("Value of "+celsius+" celsius in fahrenheit: "+ f);   
+   }
+}
+
+import java.util.Scanner;
+class VowelOrConsonant
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the alphabet");
+      char ch=s.next().charAt(0);
+      if((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')||(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'))
+      {
+        System.out.println("given alphabet is vowel:");
+      }
+      else
+      {
+        System.out.println("given alphabet is consonent");
+      }
+    }
+  }
+

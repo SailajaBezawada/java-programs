@@ -1,0 +1,245 @@
+Day 7
+class Condition
+  {
+    public static void main(String args[])
+    {
+     int a=20,b=10;
+      int max=(a>b) ? a : b;
+      System.out.println("the greater value is"+max);
+      
+        
+      
+    }
+  }
+import java.util.Scanner;
+class Divisible
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the num1 value");
+      int num1=s.nextInt();
+      System.out.println("enter the num2 value");
+      int num2=s.nextInt();
+      if(num1%num2==0)
+      {
+        System.out.println("num1 is divisible by num2");
+      }
+     else
+      {
+        System.out.println("num1 is not divisible by num2");
+         
+}
+      }
+    }
+  
+
+
+import java.util.Scanner;
+class EqualNotEqual
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the value a: ");
+      int a=s.nextInt();
+      System.out.println("enter the value b: ");
+      int b=s.nextInt();
+      if(a==b)
+      {
+        System.out.println("the value is equal");
+      }
+     else
+      {
+      System.out.println("the value is not equal");  
+}
+    }
+  }
+
+import java.util.Scanner;
+class EvenOrOdd
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.print("Enter a number: ");
+      int num = s.nextInt();
+      if(num % 2 == 0)
+      {
+        System.out.println(num + " is even"); 
+      }
+           
+        else{
+          System.out.println(num + " is odd");
+        }
+
+
+    }
+  }
+
+import java.util.Scanner;
+class Greater
+{
+  public static void main(String args[])
+  {
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter the first value ");
+        a =s.nextInt();
+       if(a>10)
+      {
+        System.out.println(("greater than " + a);
+      }
+      else 
+      {
+        System.out.println("not greater than: " + a);
+  }
+  
+}
+}
+
+class Sample
+  {
+    public static void main(String args[])
+    {
+     int a=20,b=10,c=30;
+      int max= (a>b && a>c) ? a : (b>c ? b:c);
+      System.out.println("the greater value is"+max);
+      
+        
+      
+    }
+  }
+
+  
+    class Increment
+  {   
+    public static void main(String args[])
+    {
+  int x=10;
+//System.out.println(x++ + ++x); //22
+  //  System.out.println(x++ + x++);  //21
+   // System.out.println(x++ + x--); //21
+//System.out.println(++x + x--); //22
+      System.out.println(++x + --x); 
+    }
+  }
+      
+      
+ 
+
+
+import java.util.Scanner;
+class Multiple
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the num value");
+      int num=s.nextInt();
+      if(num%5==0)
+      {
+        System.out.println("it is a multiple of 5 "+num);
+      }
+    }
+  }
+
+import java.util.Scanner;
+class PositiveNumber
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter value");
+      int num=s.nextInt();
+        if(num>0)
+      {
+        System.out.println("the number is positive"+num);
+      }
+     else if(num<0)
+      {
+        System.out.println("the number is negative"+num);
+      }
+     else
+      {
+        System.out.println("the number is equal to zero"+num);
+      }
+      
+      
+    }
+  }
+
+import java.util.Scanner;
+class Sample
+  {
+    public static void main(String args[])
+    {
+      Double a,b;
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter a value:");
+      a=sc.nextDouble();
+      System.out.println("enter b value:");
+      b=sc.nextDouble();
+      Double c=a+b;
+      System.out.println("the sum is:"+c);
+    }
+  }
+
+import java.util.Scanner;
+class Sample1
+  {
+    public static void main(String args[])
+    {
+      float a,b;
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter  a value:");
+      a=s.nextFloat();
+      System.out.println("enter b value:");
+      b=s.nextFloat();
+      Float c=a+b;
+      System.out.println("the sum is:"+c);
+      
+    }
+  }
+
+//narrowing typecasting
+import java.util.Scanner;
+class SampleType
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter the value");
+      double number=sc.nextDouble();
+      int value=(int)number;
+      System.out.println(value);
+       
+                        
+    }
+  }
+
+import java.util.Scanner;
+class StudentDetails
+  {
+    public static void main(String args[])
+    {
+     Scanner  s=new Scanner(System.in);
+      System.out.println("enter student name:");
+      String sname=s.next();
+      System.out.println("enter student address:");
+      String saddress=s.next();
+      System.out.println("enter student grade:");
+      char sgrade=s.next().charAt(0);
+      System.out.println("enter student marks:");
+      int smarks=s.nextInt();
+      System.out.println("enter student percenatge:");
+      Double spercenatge=s.nextDouble();
+      System.out.println("enter student mobileno:");
+      long smobileno=s.nextLong();
+      System.out.println("enter student martial_status:");
+      boolean smartial_status=s.nextBoolean();
+      
+    
+    }
+  }
+
+

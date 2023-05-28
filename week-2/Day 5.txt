@@ -1,0 +1,36 @@
+Day 5
+class Sample
+  {
+    public static void main(String args[])
+    {
+      System.out.println("Hello world");
+    }
+  }
+
+
+ public class SelfDetails
+   {
+     public static void main(String args[])
+     {
+       String name="sailu";
+       String address="vijayawada";
+       char grade='A';
+       int marks=96;
+       double percantage=96.0;
+       long mobileno=987654321;
+       boolean marital_status=false;
+       System.out.println("my name is "+name);
+      System.out.println("Your address is "+address);
+      System.out.println(" is your grade"+grade);
+      System.out.println("Your marks is "+marks);
+      System.out.println("Your percantage is "+percantage);
+      System.out.println("Your mobile number is "+mobileno);
+      System.out.println("Your marital status is "+marital_status);
+     }
+   }
+
+
+
+
+
+

@@ -1,0 +1,245 @@
+Day 6
+class Addition
+  {
+    public static void main(String args[]){
+      int a=12,b=10,c=15;
+       int d=a+b+c;
+      System.out.println("the sum is "+d);
+      
+        
+    }
+  }
+
+  class ArthematicOperators{
+  public static void main(String args[]){
+int a=10,b=30;
+int c=a+b;
+System.out.println("the addition is:"+c);
+System.out.println("the substraction is:"+(a-b));
+System.out.println("the multiplication is:"+(a*b));
+System.out.println("the division is:"+(a/b));
+System.out.println("the modulus is:"+(a%b));
+}
+}
+
+
+class AssignmentOperator
+  {
+    public static void main(String args[])
+    {
+      int a=10;
+        int b=20;
+      System.out.println(a=a+1);
+      System.out.println(a-=1);
+      System.out.println(a=a*(b+1));
+      System.out.println(a/=(b+1));
+    }
+  }
+
+class AverageOfThreeNumbers
+  {
+    public static void main(String args[])
+    {
+    int a=10,b=15,c=20,sum;
+    float average;
+      sum=a+b+c;
+      average=(sum)/3;
+      System.out.println("Average of a,b and c is "+average);
+      }
+   
+
+   class Bit
+  {
+    public static void main(String args[])
+    {
+      int a=10,b=15;
+      System.out.println("bitwise and operator(&)"+(a&b));
+      System.out.println("bitwise or operator(|)"+(a|b));
+      System.out.println("bitwise xor operator(^)"+(a^b));
+    }
+  }
+
+
+class Exampl3
+  {
+    public static void main(String args[])
+    {
+      int x=10;
+        int y=20;
+      
+      System.out.println((x>y) && (y<x));
+      System.out.println((x>y) || (y>x));
+      System.out.println(!(y>x));
+      System.out.println(!(x==y));
+      
+      
+      
+
+    }
+  }
+class Example1
+  {
+    public static void main(String args[])
+    {
+      int x=10;
+        int y=20;
+      
+      System.out.println((x>y) && (y<x));
+      System.out.println((x>y) || (y>x));
+      System.out.println(!(y>x));
+      System.out.println(!(x==y));
+      
+      
+      
+
+    }
+  }
+
+
+
+
+class Example2
+  {
+    public static void main(String args[])
+    {
+
+      int num1=10;
+      int num2=20;
+       String result = (num1 == num2) ? "is" : "is not";
+      System.out.println(num1 + " and " + num2 + " " + result + " equal");
+    }
+  }
+      
+
+
+public class Example4
+{
+    public static void main(String[] args)
+  {
+        int a=12,b=45;
+        System.out.println("Enter the first number: "+a);
+        System.out.println("Enter the second number: "+b);
+       System.out.println("Before swapping: " +a + ", " + b);
+        a = a + b;
+        b = a - b;
+        a= a - b;
+         System.out.println("After swapping: " + a + ", " + b);
+    }
+
+}
+
+
+class Example5 {
+    public static void main(String[] args) {
+
+        System.out.print("Enter the boolean value (true/false): ");
+      boolean boo=true;
+        System.out.println("The opposite value of the boolean variable is: " + boo);
+    }
+}
+
+
+
+class Example6 {
+    public static void main(String[] args) {
+
+
+        int r= 6;
+        double circumference =(2*Math.PI*r);
+        System.out.println("Circumference of the circle = " + circumference);
+      
+    }
+}
+
+
+class Example7
+  {
+    public static void main(String args[])
+    {
+      double phy=80,social=75,science=67,maths=90,english=72;
+       double percentage=((phy+social+science+maths+english)/500)*100;
+      System.out.println("percentage= "+percentage);
+        
+      
+      
+    }
+  }
+
+class LogicalOperators
+  {
+    public static void main(String args[])
+    {
+      int a=10;
+        int b=20;
+        int y=50;
+    System.out.println((a>b) && (b>y));
+    System.out.println((a<b) || (b>y));
+    System.out.println(!(a == b));
+    System.out.println(!(y>a));
+        
+    }
+  }
+
+
+class RelationalOperators
+{
+public static void main(String args[])
+{
+System.out.println("lessthan(<)"+(23<56));
+System.out.println("greaterthan(>)"+(56>33));
+System.out.println("greaterthanequalto(>=)"+(45>=45));
+System.out.println("lessthanequalto(<=)"+(25<=25));
+System.out.println("notequalto(!=)"+(25!=38));
+
+}
+}
+
+
+class Shift
+  {
+    public static void main(String args[])
+    {
+      System.out.println("leftshift operator(<<)"+(20<<2));
+      System.out.println("leftshift operator(<<)"+(20<<3));
+      System.out.println("right shift operator(>>)"+(20>>2));
+      System.out.println("right shift operator(>>)"+(20>>3));
+    }
+  }
+
+class StudentDetails
+  {
+    public static void main(String args[])
+    {
+      String name="sailu";
+      int rollno=123;
+      String branch="CSE";
+      char year='I';
+      float percentage=78.90f;
+      long mobileno=9876543210l;
+      boolean martial_status=false;
+      String dob="07-09-2000";
+      System.out.println("student details are:");
+      System.out.println("student name is "+name);
+      System.out.println("student roll no "+rollno);
+      System.out.println("student branch "+branch);
+      System.out.println("student year "+year);
+      System.out.println("student percentage "+percentage);
+      System.out.println("student mobileno "+mobileno);
+      System.out.println("student martial_status"+martial_status);
+      System.out.println("student dob "+dob);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
