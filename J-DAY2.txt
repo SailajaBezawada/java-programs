@@ -1,0 +1,370 @@
+JULY
+DAY2
+//checking voting eligibility citeria
+class Age
+  {
+    public static void main(String args[])
+    {
+      int age=18;
+      if(age>=18)
+      {
+        System.out.println("eligible to vote");
+      }
+      else{
+        System.out.println("not eligible to vote");
+      }
+    }
+  }
+
+import java.util.Scanner;
+class Cube
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int num=s.nextInt();
+      for(int i=1;i<=num;i++)
+        {
+          System.out.println("the cube of"+i+"is"+(i*i*i));
+        }
+      
+    }
+  }
+import java.util.Scanner;
+class Equals
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the first number");
+      int n1=s.nextInt();
+      System.out.println("enter the second number");
+      int n2=s.nextInt();
+      System.out.println("enter the third number");
+      int n3=s.nextInt();
+      System.out.println("enter the fourth number");
+      int n4=s.nextInt();
+      if((n1==n2)&&(n1==n3)&&(n1==n4))
+        {
+        System.out.println("numbers are equal");
+        }
+      else
+      {
+        System.out.println("numbers are not equal");
+      }
+      
+      
+      
+    }
+  }
+class Name
+  {
+    public static void main(String args[])
+    {
+      String yourname="sailu";
+      if(yourname==("shalu"))
+      {
+        System.out.println("your name is shalu");
+      }
+      else if(yourname==("jyothi"))
+      {
+        System.out.println("your name is jyothi");
+      }
+      else if(yourname==("kiran"))
+      {
+        System.out.println("your name is kiran");
+      }
+      
+ else if(yourname==("devi"))
+ {
+   System.out.println("devi");
+        
+}
+      else {
+        System.out.println("invalid name");
+        
+}
+      
+    }
+  }
+
+import java.util.Scanner;
+class Natural
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter number");
+      int n=s.nextInt();
+      for(int i=1;i<=n;i++)
+        {
+          System.out.println(i);
+        }
+    }
+  }
+
+class Nestedif
+  {
+    public static void main(String args[])
+    {
+      String country="india";
+      int age=19;
+      if(country=="india")
+      {
+        if(age>=18)
+        {
+          
+        
+        System.out.println("your are eligible to vote");
+        }
+      
+      else 
+      {
+        System.out.println("you arenot eligible to vote");
+      }
+      }
+        
+       else
+      {
+        System.out.println("not from india ");
+        
+}
+    
+
+}
+    }
+
+
+import java.util.Scanner;
+class Singlecube
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a number");
+      int num=s.nextInt();
+      System.out.println("the cube of number is"+(num*num*num));
+    }
+  }
+class Sum
+  {
+    public static void main(String args[])
+    {
+      int a=20;
+      int b=23;
+      int sum=a+b;
+      if(sum>20)
+         {
+        System.out.println("sum is greater than 20");
+         }
+    }
+  }
+import java.util.Scanner;
+class Sumavg
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the numbers");
+      int n1=s.nextInt();
+      int n2=s.nextInt();
+      int n3=s.nextInt();
+      int n4=s.nextInt();
+      int n5=s.nextInt();
+      System.out.println("sum of number"+(n1+n2+n3+n4+n5));
+      System.out.println("avg iof number"+((n1+n2+n3+n4+n5)/5));
+    }
+  }
+import java.util.Scanner;
+class Sumnumbers
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a number");
+      int num=s.nextInt();
+      int sum=0;
+      for(int i=1;i<=num;i++)
+        {
+          System.out.println(i);
+          sum=sum+i;
+          
+        }
+      System.out.println("sum of "+num+"numbers are"+sum);
+    }
+  }
+import java.util.Scanner;
+class Switch
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the month which you want to check the days");
+       String month=s.nextLine();
+      switch(month)
+        {
+          case "jan":
+            System.out.println("jan has 3 days");
+            break;
+          case "feb":
+            System.out.println("feb has 28 days");
+            break;
+          case "mar":
+            System.out.println("mar has 31 days");
+            break;
+          case "april":
+            System.out.println("april has 30 days");
+            break;
+          case "may":
+            System.out.println("may has 31 days");
+            break;
+          case "june":
+            System.out.println("june has 30 days");
+            break;
+          case "july":
+            System.out.println("july has 31 days");
+            break;
+          case "aug":
+            System.out.println("aug has 31 days");
+            break;
+          case "sep":
+            System.out.println("sep has 30 days");
+            break;
+          case "oct":
+            System.out.println("oct has 31 days");
+            break;
+          case "nov":
+            System.out.println("nov has 30 days");
+            break;
+          case "dec":
+            System.out.println("dec has 31 days");
+            break;
+          default:
+            System.out.println("invalid input");
+            
+        }
+    }
+  }
+
+import java.util.Scanner;
+class Table1
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the multiplication table");
+      int n=s.nextInt();
+      for(int i=0;i<=20;i++){
+        System.out.println(n+" * "+i+"="+(n*i));
+      }
+    }
+  }
+import java.util.Scanner;
+class Even
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the number");
+      int num=s.nextInt();
+      for(int i=1;i<=num;i++)
+        {
+          if(i%2==0)
+          {
+            System.out.println(i);
+            
+          }
+          
+        }
+    }
+  }
+import java.util.Scanner;
+class EvenOdd
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a number");
+      int num=s.nextInt();
+      if(num%2==0)
+      {
+        System.out.println(num+"is even number");
+      }
+      else{
+        System.out.println(num+"is odd number");
+      }
+    }
+  }
+import java.util.Scanner;
+class Weekdays
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a number");
+      int num=s.nextInt();
+      switch(num)
+        {
+          case 1:
+            System.out.println("monday");
+            break;
+          case 2:
+            System.out.println("tuesday");
+            break;
+          case 3:
+            System.out.println("wednesday");
+            break;
+          case 4:
+            System.out.println("thursday");
+            break;
+          case 5:
+            System.out.println("friday");
+            break;
+          case 6:
+            System.out.println("saturday");
+            break;
+          case 7:
+            System.out.println("sunday");
+            break;
+          default:
+            System.out.println("invalid number");
+        }
+      
+    }
+  }
+import java.util.Scanner;
+
+class SumOfEven {
+  public static void main(String args[]) {
+    Scanner s = new Scanner(System.in);
+    System.out.println("enter a number");
+    int n1 = s.nextInt();
+    int sum = 0;
+
+    for (int i = 1; i <= n1; i++) {
+      if (i % 2 == 0) {
+        sum = sum + i;
+      }
+
+    }
+    System.out.println("sum of even numbers"+sum);
+  }
+}
+import java.util.Scanner;
+class Positivenegative
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a number");
+      int n1=s.nextInt();
+      if(n1>0)
+      {
+        System.out.println(n1+"is positive number");
+      }
+      else{
+        System.out.println(n1+"is negative number");
+      }
+    }
+  }

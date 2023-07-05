@@ -1,0 +1,126 @@
+July
+DAY 1
+ class Add1
+  {
+    public static void main(String args[])
+    {
+      int a=10,b=15;
+      int c=a+b;
+      System.out.println("the sum is"+c);
+    }
+  }
+
+class Ascii
+  {
+    public static void main(String args[])
+    {
+      char ch=90;
+      int ascii=ch;
+      System.out.println("ASCII value of"+ch+"is"+ascii);
+    }
+  }
+class Compare
+  {
+    public static void main(String args[])
+    {
+      int a=25;
+      int b=39;
+      if(a!=b)
+      {
+        System.out.println("25!=39");
+      }
+       if(a<b)
+      {
+       System.out.println("25<39");
+      }
+      if(a<=b)
+      {
+        System.out.println("25<=39");
+      }
+    }
+  }
+
+class Divisible
+  {
+    public static void main(String args[])
+    {
+      System.out.println("divisible by 3");
+      for(int i=1;i<100;i++)
+        {
+          if(i%3==0){
+            
+          
+            System.out.println(i + "  ");
+          }
+        }
+      System.out.println("\ndivisible by 5");
+      for(int i=1;i<100;i++)
+        {
+          if(i%5==0){
+            
+          System.out.println(i + "  ");
+          }
+        }
+      System.out.println("\ndivisible by 3 & 5");
+      for(int i=1;i<100;i++)
+        {
+          if(i%3==0 && i%5==0)
+          {
+            System.out.println(i + "  ");
+          }
+        }
+    }
+  }
+class Formula
+  {
+    public static void main(String args[])
+    {
+      double a=4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11));
+        System.out.println(a);
+    }
+  }
+
+class Operators
+  {
+    public static void main(String args[])
+    {
+      int a=-5+8*6;
+      int b=(55+9)%9;
+      int c=20+-3*5/8;
+      int d=5+15/3*2-8%3;
+      System.out.println(a);
+      System.out.println(b);
+      System.out.println(c);
+      System.out.println(d);
+    }
+  }
+
+class Rectangle
+  {
+    public static void main(String args[])
+    {
+      double length=8.5; 
+      double breadth=5.6;
+      double area=length*breadth;
+      double perimeter=2*(length+breadth);
+      System.out.println("area of rectangle" +area);
+      System.out.println("perimeter of rectangle" +perimeter);
+      
+    }
+  }
+
+import java.util.Scanner;
+class Table
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      int n=s.nextInt();
+      for(int i=0;i<=20;i++)
+        {
+          
+       System.out.println(n + " x " + i + " = "+(n*i));
+        }
+      
+    }
+  }
