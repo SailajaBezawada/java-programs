@@ -1,0 +1,224 @@
+JULY/WEEK-2/DAY-1
+import java.util.Scanner;
+class Emailvalidation
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter an email");
+      String str=s.nextLine();
+      int count=0,ecount=0;
+      if(str.contains("@")&&str.contains("."))
+      {
+        count++;
+        
+      }
+      if(str.endsWith(".com")||str.endsWith(".org"))
+      {
+        ecount++;
+      }
+      if(count>0&&ecount>0){
+        System.out.println("email is valid");
+      }
+      else
+        System.out.println("email is invalid");
+    }
+  }
+
+class Frequency
+  {
+    public static void main(String args[])
+    {
+      String str="bitslabs in vijayawada";
+      char ch='y';
+      int frequency=0;
+      for(int i=0;i<str.length();i++)
+        {
+          if(ch==str.charAt(i))
+          {
+            frequency++;
+          }
+        }
+      System.out.println("frequency of " +ch+ "="+frequency);
+    }
+  }
+import java.util.Scanner;
+class FrequencyString
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a string");
+      String str=s.nextLine();
+ 
+      //to count each letter frequency
+      System.out.println("charachter frequency");
+      for(char ch='a';ch<='z';ch++)
+        {
+          int count=0;//counter value
+          //to traverse every element
+          for(int i=0;i<str.length();i++)
+            {
+              if(ch==str.charAt(i))
+                count++;
+            }
+          
+          
+          
+        }
+      System.out.println(ch+count);
+      
+    }
+  }
+
+import java.util.Scanner;
+class Lastoccurance
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the string");
+      String str=s.nextLine();
+      int n=charArray.length;
+      System.out.println("the last occurance of charachter in the string is ");
+      char last=str.charAt(n-1);
+      System.out.println(last);
+    }
+  }
+
+import java.util.Scanner;
+class Occurancestring
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the string");
+      String str=s.nextLine();
+      System.out.println(" the first occurance of charachter in the string");
+      char first=str.charAt(0);
+      System.out.println(first);
+      
+    }
+  }
+
+import java.util.Scanner;
+class Passwordvalidation
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a string");
+      String str=s.nextLine();
+      int ucount=0,lcount=0,dcount=0,scount=0;
+      if(str.length()>=8)
+      {
+        for(int i=0;i<str.length();i++)
+          {
+            if(str.charAt(i)>='a'&&str.charAt(i)<='z')
+            {
+              lcount++;
+            }
+            else if(str.charAt(i)>='A'&&str.charAt(i)<='Z')
+            {
+              ucount++;
+            }
+            else if(str.charAt(i)>='0'&&str.charAt(i)<='9')
+            {
+              dcount++;
+            }
+            else
+              scount++;
+          }
+      }
+      else{
+        System.out.println("password should be minimum 8");
+      }
+      if(lcount>0&&ucount>0&&dcount>0&&scount>0)
+      {
+        System.out.println("password is strong");
+      }
+      else
+        System.out.println("password is weak");
+      }
+      }
+    
+  
+class Stringbuffer{
+  public static void main(String args[])
+  {
+    StringBuffer sb=new StringBuffer("welcome");
+    String str=new String("welcome");
+    System.out.println(str.concat("bitlabs"));
+    System.out.println(sb.append("bitlabs"));
+    System.out.println(sb);
+    System.out.println(str);
+  }
+}
+import java.util.Scanner;
+class Stringlastword
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the string");
+      String str=s.nextLine();
+      String s1[]=str.split(" ");
+      int max=s1[0].length();
+      String word=" ";
+      for(int i=0;i<s1.length;i++)
+        {
+          if(max<s1[i].length()){
+            max=s1[i].length();
+            word=s1[i];
+          }
+        }
+      System.out.println("the largets word in the sentence is" +word);
+      
+    }
+  }
+
+import java.util.Scanner;
+class Stringminword
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the string");
+      String str=s.nextLine();
+      String s1[]=str.split(" ");
+      int min=s1[0].length();
+      String minword="";
+      for(int i=0;i>s1.length;i++)
+        {
+          if(min>s1[i].length())
+          {
+            min=s1[i].length();
+            minword=s1[i];
+          }
+        }
+        
+        System.out.println("the minimum word is " +minword);
+    
+  }
+  }
+
+class Stringreverse
+  {
+    public static void main(String args[])
+    {
+      String str="sailu";
+      String reverse="";
+      for(int i=str.length()-1;i>=0;i--)
+        {
+          reverse=reverse+str.charAt(i);
+        }
+      System.out.println(reverse);
+      if(str.equals(reverse))
+      {
+        System.out.println("string is palindrome");
+      }
+      else
+        System.out.println("it is not palimdrome");
+    }
+    
+  }

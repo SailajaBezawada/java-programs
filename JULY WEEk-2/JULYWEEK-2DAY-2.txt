@@ -1,0 +1,112 @@
+JULY/WEEK-2/DAY-2
+import java.util.Scanner;
+class Stringpalindrome
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the sentence");
+      String str=s.nextLine();
+      String str1[]=str.split(" ");
+      for(int i=0;i<str1.length;i++)
+        {
+          String temp=str1[i];
+          String reverse="";
+          for(int j=temp.length()-1;j>=0;j--)
+            {
+              reverse=reverse+temp.charAt[j];
+              
+            }
+          if(temp.equals(reverse))
+          {
+            System.out.println(temp+"it is palindrome");
+          }
+          else
+            System.out.println(temp+"it is not palindrome");
+        }
+      int max=str1[0].length();
+      String word=" ";
+      for(int i=0;i<str1.length;i++)
+        {
+          if(max<str1[i].length())
+          {
+            max=str1[i].length();
+            word=str1[i];
+            
+          }
+        }
+      System.out.println("the largest word is "+word);
+    }
+  } 
+
+import java.util.Scanner;
+class Frequency1
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the sentence");
+      String str=s.nextLine();
+      char str1[]=str.toCharArray();
+      boolean b[]=new boolean[str1.length];
+      for(int i=0;i<b.length;i++)
+        {
+          b[i]=false;
+        }
+      for(int i=0;i<str1.length;i++)
+        {
+          int count=1;
+          if(b[i]==true)
+            continue;
+          for(int j=i+1;j<str1.length;j++)
+            {
+              if(str[i]==(str[j]))
+              {
+                count++;
+                b[j]=true;
+                  
+              }
+            }
+        }
+    }
+  }
+#Write a string palindrome Program
+import java.util.Scanner;
+class Stringpalindrome
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter the sentence");
+      String str=s.nextLine();
+      String str1[]=str.split(" ");
+      for(int i=0;i<str1.length;i++)
+        {
+          String temp=str1[i];
+          String reverse="";
+          for(int j=temp.length()-1;j>=0;j--)
+            {
+              reverse=reverse+temp.charAt[j];
+              
+            }
+          if(temp.equals(reverse))
+          {
+            System.out.println(temp+"it is palindrome");
+          }
+          else
+            System.out.println(temp+"it is not palindrome");
+        }
+      int max=str1[0].length();
+      String word=" ";
+      for(int i=0;i<str1.length;i++)
+        {
+          if(max<str1[i].length())
+          {
+            max=str1[i].length();
+            word=str1[i];
+            
+          }
+        }
+      System.out.println("the largest word is "+word);
+    }
+  } 
